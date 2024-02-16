@@ -9,11 +9,19 @@
 <body>
     <div class="container">
         <h1>Task Manager</h1>
-        <input type="text" id="taskInput" placeholder="Add a new task">
-        <button onclick="addTask()">Add Task</button>
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <select id="prioritySelect">
+                <option value="high">High Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="low">Low Priority</option>
+            </select>
+            <input type="date" id="dueDate"><br>
+            <button onclick="addTask()">Add Task</button>
+        </div>
         <ul id="taskList"></ul>
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
